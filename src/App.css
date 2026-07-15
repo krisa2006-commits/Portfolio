@@ -435,7 +435,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* ----- Responsive Fix - Part 1 ----- */
+/* ----- Responsive ----- */
 
 html,
 body {
@@ -463,8 +463,8 @@ img {
   }
 
   .slider {
-    height: auto;
     min-height: 100vh;
+    height: auto;
     padding: 80px 40px;
   }
 
@@ -496,6 +496,42 @@ img {
   .skill-heading {
     margin-left: 0;
     text-align: center;
+  }
+
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact-box {
+    width: 100%;
+    margin-left: 0;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .left {
+    width: 38%;
+  }
+
+  .right {
+    width: 62%;
+  }
+
+  .left h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .left h2 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .input-box input,
+  .textarea textarea {
+    font-size: 17px;
   }
 
 }
@@ -550,147 +586,6 @@ img {
     text-align: center;
   }
 
-  .footer-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-}
-
-/* ----- Mobile ----- */
-
-@media (max-width:768px) {
-
-  .header {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .logo h2 {
-    font-size: 30px;
-  }
-
-  .navbar {
-    margin-left: 0;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .navbar p {
-    font-size: 16px;
-  }
-
-  .slider {
-    height: auto;
-    padding: 60px 20px;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .left-slider {
-    width: 100%;
-  }
-
-  .left-slider h4 {
-    font-size: 22px;
-  }
-
-  .left-slider h1 {
-    font-size: 40px;
-  }
-
-  .left-slider h2 {
-    font-size: 24px;
-  }
-
-  .left-slider p {
-    width: 100%;
-    font-size: 15px;
-  }
-
-  .slider-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .slider-btn button {
-    width: 100%;
-  }
-
-  .about-heading {
-    font-size: 32px;
-  }
-
-  .about-boxes {
-    flex-direction: column;
-  }
-
-  .box {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .skill-heading {
-    margin-left: 0;
-    text-align: center;
-    font-size: 28px;
-  }
-
-  .card {
-    width: 220px;
-  }
-
-}
-
-/* ----- Contact & Footer Responsive ----- */
-
-@media (max-width:1200px) {
-
-  .contact {
-    padding: 80px 20px;
-  }
-
-  .contact-box {
-    width: 100%;
-    margin-left: 0;
-    padding: 40px;
-    gap: 40px;
-  }
-
-  .left {
-    width: 38%;
-  }
-
-  .right {
-    width: 62%;
-  }
-
-  .left h1 {
-    font-size: 50px;
-    line-height: 1.2;
-    white-space: normal;
-    word-break: break-word;
-  }
-
-  .left h2 {
-    font-size: 42px;
-    line-height: 1.2;
-  }
-
-  .input-box input,
-  .textarea textarea {
-    font-size: 17px;
-  }
-
-}
-
-
-/* ----- Tablet ----- */
-
-@media (max-width:992px) {
-
   .contact {
     padding: 70px 20px;
   }
@@ -730,23 +625,117 @@ img {
     justify-content: center;
   }
 
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
 }
 
 /* ----- Mobile ----- */
 
 @media (max-width:768px) {
 
+  .header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .logo h2 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    margin-left: 0;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar p {
+    font-size: 16px;
+  }
+
+  .resume button {
+    padding: 10px 18px;
+  }
+
+  .slider {
+    height: auto;
+    padding: 60px 20px;
+    justify-content: center;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .left-slider {
+    width: 100%;
+  }
+
+  .left-slider h4 {
+    font-size: 22px;
+  }
+
+  .left-slider h1 {
+    font-size: 40px;
+  }
+
+  .left-slider h2 {
+    font-size: 24px;
+  }
+
+  .left-slider p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .slider-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .slider-btn button {
+    width: 100%;
+  }
+
+  .about-heading {
+    font-size: 32px;
+  }
+
+  .about-boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .skill-heading {
+    margin-left: 0;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .card {
+    width: 220px;
+  }
+
   .contact {
     padding: 60px 15px;
   }
 
   .contact-box {
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
     margin: 0;
     padding: 25px 18px;
     gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .left,
@@ -758,7 +747,6 @@ img {
   .left h1 {
     font-size: 34px;
     line-height: 1.2;
-    width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -771,6 +759,7 @@ img {
 
   .input-row {
     flex-direction: column;
+    gap: 20px;
   }
 
   .input-box input {
@@ -893,7 +882,7 @@ img {
 
 /* ----- iPad Pro ----- */
 
-@media only screen and (min-width: 820px) and (max-width: 1180px) {
+@media only screen and (min-width:820px) and (max-width:1180px) {
 
   .header {
     display: flex;
@@ -921,7 +910,7 @@ img {
     font-size: 17px;
   }
 
-  .resume {
+  .resume { 
     margin: 0;
   }
 
